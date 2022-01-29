@@ -1,0 +1,115 @@
+body {
+    background-color: #000000;
+}
+#maindiv {
+    background-color: black;
+    width: 320px;
+    height: 410px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -205px;
+    border: 1px solid gray;
+    /* animation-name: fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+     */
+
+}
+
+/* @keyframes fade-in1{
+    from {width: 0px; height:0px;}
+    to {width: 320px; height: 410px;}
+} */
+@keyframes fade-in-left-vertical{
+    from {width: 0px; height:0px;}
+    to {width: 60px; height: 370px;}
+}
+@keyframes zoom-in-diagonal {
+    from {width: 0px; height:0px;}
+    to {width: 60px; height: 370px;}
+}
+@keyframes zoom-in-right-vertical {
+    from {width: 0px; height:0px;}
+    to {width: 60px; height: 370px;}
+}
+@keyframes zoom-in-oval-bottom{
+    from {width: 0px; height:0px;}
+    to {width: 240px; height: 20px;}
+}
+
+#leftvertical {
+    background-color: #970e0e;
+    width: 60px;
+    height: 370px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 2px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+    animation-name: fade-in-left-vertical;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+    
+}
+
+#diagonaltop {
+    background-color: #d91515;
+    width: 60px;
+    height: 370px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 2px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -30px;
+    transform: skewX(26deg);
+    box-shadow: 0px 0px 20px 0px;
+    z-index: 1;
+
+    animation-name: zoom-in-diagonal;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+}
+
+ #rightvertical {
+    background-color: #970e0e;
+    width: 60px;
+    height: 370px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+
+    animation-name: zoom-in-right-vertical;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+}
+#bottomoval {
+    background-color: black;
+    width: 240px;
+    height: 20px;
+    border-radius: 100%;
+    /* border-top-left-radius: 900%;
+    border-top-right-radius: 900%; */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -120px;
+    z-index: 2;
+
+
+    animation-name: zoom-in-oval-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+}
